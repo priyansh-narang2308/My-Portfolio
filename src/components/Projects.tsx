@@ -37,7 +37,7 @@ const Projects = () => {
     {
       title: "RepoGalaxy",
       description: "Github Like place where you can find your repos and explore the popular repositories using the github API",
-      image: "https://private-user-images.githubusercontent.com/145008344/427198975-bd3bcd7c-6d91-46e9-83b5-deafe93dae83.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyOTk2NDcsIm5iZiI6MTc0NzI5OTM0NywicGF0aCI6Ii8xNDUwMDgzNDQvNDI3MTk4OTc1LWJkM2JjZDdjLTZkOTEtNDZlOS04M2I1LWRlYWZlOTNkYWU4My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNVQwODU1NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03NDg5Mzc3ZjUwMzA0MGE0NGEyYzlkYWM0YmRlNDkzYTdkOThiOWI3ZWJhMDcwZTBkZWU3MmRiYjVlOGU0ODI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.EMzfrlxeysGyI3OUtdSImgiTD_AtlLQporCywwhPDnU",
+      image: "/repo.png",
       category: "Web",
       technologies: ["Python", "TensorFlow", "React", "Flask"],
       demo: "https://mern-repogalaxy.onrender.com/",
@@ -74,7 +74,7 @@ const Projects = () => {
     {
       title: "Dating APP - SmashMeMaybe",
       description: "A proper dating web app similar to tinder where users can swipe right and swipe left and on matching a chat window appears where the matches can have chat",
-      image: "https://private-user-images.githubusercontent.com/145008344/430707618-1928828f-b011-4a82-996e-bedde1aa3cc9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDcyOTk4MDQsIm5iZiI6MTc0NzI5OTUwNCwicGF0aCI6Ii8xNDUwMDgzNDQvNDMwNzA3NjE4LTE5Mjg4MjhmLWIwMTEtNGE4Mi05OTZlLWJlZGRlMWFhM2NjOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNVQwODU4MjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMzhlNDM4MmMxN2VkZDZiNjVlMTZkNWM4YWFkMmZiYTlkNDdjODZjNWViOTk5YWMyZmQ2ZDJiMzI5ZTgxZmZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.91olCIU5DglX786di-MO19GRGfEn2itwk0kZExUuqE4",
+      image: "/smash.png",
       category: "Web",
       technologies: ["React", "NodeJS", "Socket.io", "MongoDB", "ExpressJS"],
       demo: "https://smashmemaybe-dating-mern-app.onrender.com/auth",
