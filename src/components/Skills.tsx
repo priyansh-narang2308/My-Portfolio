@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 
 const Skills = () => {
@@ -219,8 +220,10 @@ const Skills = () => {
       </div>
     );
   };
+  const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
 
   return (
+
     <div className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto">
         <motion.div
@@ -237,60 +240,67 @@ const Skills = () => {
         </motion.div>
 
         <div className="flex flex-col md:flex-row justify-center mb-10">
-          {categories.map((category, categoryIndex) => (
+          {categories.map((category, index) => (
             <motion.button
-              key={categoryIndex}
+              key={index}
+              onClick={() => setSelectedCategory(category.name)}
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: categoryIndex * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`px-6 py-2 rounded-full mx-2 mb-3 md:mb-0 bg-gray-800 text-gray-300 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white transition-all duration-300`}
+              className={`px-6 py-2 rounded-full mx-2 mb-3 md:mb-0 ${selectedCategory === category.name
+                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
+                  : "bg-gray-800 text-gray-300"
+                } hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white transition-all duration-300`}
             >
               {category.name}
             </motion.button>
           ))}
         </div>
 
-        {categories.map((category, idx) => (
-          <motion.div
-            key={idx}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="mb-16"
-          >
-            <h3 className="text-2xl font-bold text-white mb-8">
-              {category.name}
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {category.skills.map((skill, skillIndex) => (
-                <motion.div
-                  key={skillIndex}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: skillIndex * 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500 hover:border-2 transition-all duration-300"
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center">
-                      <span className="text-2xl mr-3">{skill.icon}</span>
-                      <h4 className="text-lg font-semibold text-white">
-                        {skill.name}
-                      </h4>
+        {categories
+          .filter((category) => category.name === selectedCategory)
+          .map((category, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="mb-16"
+            >
+              <h3 className="text-2xl font-bold text-white mb-8">
+                {category.name}
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {category.skills.map((skill, skillIndex) => (
+                  <motion.div
+                    key={skillIndex}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: skillIndex * 0.1 }}
+                    viewport={{ once: true }}
+                    className="bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:border-blue-500 hover:border-2 transition-all duration-300"
+                  >
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">{skill.icon}</span>
+                        <h4 className="text-lg font-semibold text-white">
+                          {skill.name}
+                        </h4>
+                      </div>
+                      <span className="text-blue-400 font-medium">
+                        {skill.level}%
+                      </span>
                     </div>
-                    <span className="text-blue-400 font-medium">
-                      {skill.level}%
-                    </span>
-                  </div>
-                  {renderSkillBar(skill.level)}
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        ))}
+                    {renderSkillBar(skill.level)}
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          ))}
 
+        {/* Currently Learning */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -308,17 +318,17 @@ const Skills = () => {
                 knowledge in:
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {["AI & Machine Learning", "Computer Networks", "Blockchain Development", "Computer Vision"].map(
-                  (item, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center text-gray-300"
-                    >
-                      <span className="text-blue-400 mr-2">→</span>
-                      {item}
-                    </li>
-                  )
-                )}
+                {[
+                  "AI & Machine Learning",
+                  "Computer Networks",
+                  "Blockchain Development",
+                  "Computer Vision",
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center text-gray-300">
+                    <span className="text-blue-400 mr-2">→</span>
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="md:w-1/3 flex justify-center mt-8 md:mt-0">
