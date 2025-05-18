@@ -28,10 +28,10 @@ const Projects = () => {
     {
       title: "Eduvora - AI Based Online Learning Platform",
       description: "A full stack application for online learning platform",
-      image: "/data.svg",
+      image: "/course.png",
       category: "Web",
       technologies: ["React", "NextJS", "NeonDB", "Drizzle ORM","ShadCN"],
-      demo: "eduvora.vercel.app",
+      demo: "https://eduvora.vercel.app/",
       github: "https://github.com/priyansh-narang2308/Eduvora---AI-Online-Learning-Platform",
     },
     {
