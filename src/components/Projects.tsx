@@ -26,6 +26,15 @@ const Projects = () => {
       github: "https://github.com/priyansh-narang2308/React-native-BookmarkIt",
     },
     {
+      title: "Eduvora - AI Based Online Learning Platform",
+      description: "A full stack application for online learning platform",
+      image: "/data.svg",
+      category: "Web",
+      technologies: ["React", "NextJS", "NeonDB", "Drizzle ORM","ShadCN"],
+      demo: "eduvora.vercel.app",
+      github: "https://github.com/priyansh-narang2308/Eduvora---AI-Online-Learning-Platform",
+    },
+    {
       title: "Bicycle Stand Locker",
       description: "IoT dashboard for monitoring and controlling smart home devices",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&h=500",
