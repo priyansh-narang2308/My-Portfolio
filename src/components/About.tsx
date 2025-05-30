@@ -106,21 +106,6 @@ const About = () => {
               description: "Working effectively with others to create amazing products",
               icon: "👥",
             },
-            {
-              title: "Clean Code & Best Practices",
-              description: "Committed to writing maintainable, scalable, and well-documented code",
-              icon: "🧼",
-            },
-            {
-              title: "User-Centered Design",
-              description: "Building interfaces that prioritize usability and seamless user experiences",
-              icon: "🎯",
-            },
-            {
-              title: "Open Source Contribution",
-              description: "Actively contributing to open-source projects to give back to the community",
-              icon: "🌍",
-            },
 
           ].map((card, index) => (
             <div

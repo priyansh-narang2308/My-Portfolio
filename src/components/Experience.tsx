@@ -9,7 +9,16 @@ const Experience = () => {
       period: "2025 - Present",
       description:
         "Leading development of enterprise web applications. Architecting solutions, mentoring junior developers, and implementing best practices.",
-      technologies: ["Pythob", "Django", "Flask"],
+      technologies: ["Python", "Django", "Flask"],
+      logo: "🏢",
+    },
+    {
+      title: "Full Stack Development Internship at Skillbit Technologies",
+      company: "Skillbit Technologies",
+      period: "2025 - Present",
+      description:
+        "Building robust applications to make it look good",
+      technologies: ["ReactJS", "NextJS", "PostgreSQL",],
       logo: "🏢",
     },
   ];

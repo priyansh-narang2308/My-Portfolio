@@ -102,7 +102,6 @@ const Navbar = () => {
         }`}
     >
       <div className="container flex items-center justify-between py-4 px-6 mx-auto max-w-7xl">
-        {/* Logo with typewriter */}
         <a
           href="#"
           className="text-3xl font-extrabold cursor-pointer select-none"
@@ -112,7 +111,6 @@ const Navbar = () => {
           <TypewriterEffect />
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center space-x-12">
           {navLinks.map((link) => (
             <a
@@ -126,7 +124,7 @@ const Navbar = () => {
             </a>
           ))}
 
-         
+
         </nav>
 
         <div className="md:hidden relative z-50">
@@ -181,7 +179,7 @@ const Navbar = () => {
                 exit="closed"
                 variants={menuVariants}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                className="fixed top-0 right-0 bottom-0 w-64 bg-gray-900 border-l border-gray-700 shadow-lg backdrop-blur-md z-40 flex flex-col p-6"
+                className="fixed top-0 right-0 h-screen w-[80vw] max-w-sm bg-gray-900 border-l border-gray-700 shadow-2xl z-[60] flex flex-col p-6 overflow-y-auto"
               >
                 {/* Close button inside menu */}
                 <button
@@ -223,7 +221,7 @@ const Navbar = () => {
                   ))}
 
                   {/* Theme toggle inside menu */}
-                 
+
                 </nav>
               </motion.div>
             )}
