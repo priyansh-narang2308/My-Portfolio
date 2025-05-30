@@ -13,9 +13,9 @@ const LoadingScreen = () => {
           setTimeout(() => setIsComplete(true), 500);
           return 100;
         }
-        return prev + 1; 
+        return prev + 1;
       });
-    }, 15); 
+    }, 15);
 
     return () => clearInterval(interval);
   }, []);
@@ -28,22 +28,22 @@ const LoadingScreen = () => {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8 }}
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black"
+          className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-4"
         >
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600"
+            className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600"
           >
             PORTFOLIO IN MAKING...
           </motion.h1>
 
-          <p className="mt-3 text-sm text-gray-400 tracking-widest uppercase">
+          <p className="mt-3 text-xs sm:text-sm text-gray-400 tracking-widest uppercase text-center">
             Initializing Digital Cosmos
           </p>
 
-          <div className="mt-8 w-72 h-3 bg-gray-800 rounded-full shadow-inner overflow-hidden">
+          <div className="mt-8 w-full max-w-xs h-3 bg-gray-800 rounded-full shadow-inner overflow-hidden">
             <motion.div
               className="h-full bg-gradient-to-r from-cyan-400 to-purple-600 shadow-lg"
               initial={{ width: "0%" }}
@@ -61,7 +61,7 @@ const LoadingScreen = () => {
           </motion.p>
 
           <motion.div
-            className="absolute bottom-10 text-gray-500 text-xs"
+            className="absolute bottom-6 sm:bottom-10 text-gray-500 text-[10px] sm:text-xs"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 1 }}
