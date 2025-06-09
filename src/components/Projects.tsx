@@ -17,6 +17,15 @@ const Projects = () => {
       github: "https://github.com/priyansh-narang2308/Hirrd",
     },
     {
+      title: "KiddieGPT - AI Kids Story Generator",
+      description: "A full-stack application where users can create stories for their children by adding the story subject its genre and get it read with ai generated images.",
+      image: "/kid.png",
+      category: "Web",
+      technologies: ["React", "NextJS", "NeonDB", "Clerk", "Replicate AI","Gemini AI"],
+      demo: "https://kiddie-gpt.vercel.app/",
+      github: "https://github.com/priyansh-narang2308/KiddieGPT-AI-Kids-Story-Gnenerator",
+    },
+    {
       title: "BookMarkIt - A React Native book market app",
       description: "A full-stack mobile application where users can select the books mark it and add it as favorites",
       image: "/data.svg",

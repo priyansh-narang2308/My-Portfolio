@@ -6,11 +6,17 @@ const Experience = () => {
     {
       title: "Python Full Stack Internship at TechSonix Solutions",
       company: "Tech Innovations Inc.",
-      period: "2025 - Present",
+      period: "1st April 2025 - 30th April 2025",
       description:
         "Leading development of enterprise web applications. Architecting solutions, mentoring junior developers, and implementing best practices.",
       technologies: ["Python", "Django", "Flask"],
       logo: "🏢",
+      certificate: {  
+        name: "Python Full Stack Development",
+        issuer: "TechSonix Solutions",
+        date: "April 2025",
+        verificationLink: "/CertPy.pdf" 
+      }
     },
     {
       title: "Full Stack Development Internship at Skillbit Technologies",
@@ -121,6 +127,43 @@ const Experience = () => {
                       ))}
                     </div>
                   </div>
+                  {exp.certificate && (
+                    <div className="mt-6 pt-6 border-t-2 border-gray-600">
+                      <div className="bg-gradient-to-r from-blue-900/40 to-purple-900/40 border-2 border-blue-400/50 rounded-xl p-4 shadow-lg shadow-blue-500/10">
+                        <h4 className="text-lg font-bold text-white mb-3 flex items-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-5 w-5 text-yellow-400 mr-2"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                          OFFICIAL CERTIFICATION
+                        </h4>
+
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                          <div>
+                            <p className="text-xl font-extrabold text-white">{exp.certificate.name}</p>
+                            <p className="text-blue-300 font-medium">{exp.certificate.issuer}</p>
+                            <p className="text-gray-300 text-sm mt-1">Issued: {exp.certificate.date}</p>
+                          </div>
+
+                          <a
+                            href={exp.certificate.verificationLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-2 text-lg font-bold rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                          >
+                            VIEW CERTIFICATE
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </div>
