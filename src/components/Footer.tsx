@@ -120,9 +120,6 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-3 right-3 text-white text-lg">
-        <span> Visitors: {count ?? 'Loading...'}</span>
-      </div>
     </motion.footer>
   );
 };
