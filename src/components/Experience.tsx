@@ -26,6 +26,22 @@ const Experience = () => {
         "Building robust applications to make it look good",
       technologies: ["ReactJS", "NextJS", "PostgreSQL",],
       logo: "🏢",
+      certificate: {  
+        name: "Full Stack Development",
+        issuer: "Skillbut Technologies",
+        date: "June 2025",
+        verificationLink: "/skillbit.pdf" 
+      }
+    },
+    {
+      title: "SDE Intern at Bluestock Fintech",
+      company: "Bluestock Fintech",
+      period: "10th June 2025 - 10th September 2025",
+      description:
+        "Leading development of enterprise web applications. Architecting solutions, mentoring junior developers, and implementing best practices.",
+      technologies: ["MongoDB", "Stock Market", "Flask"],
+      logo: "🏢",
+      
     },
   ];
 
