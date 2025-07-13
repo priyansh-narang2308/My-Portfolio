@@ -60,7 +60,7 @@ const Hero = () => {
               }}
             >
               <img
-                src="/imagee.jpeg"
+                src="/ImageMy.jpeg"
                 alt="myimage"
                 className="object-cover w-full h-full rounded-full"
               />
