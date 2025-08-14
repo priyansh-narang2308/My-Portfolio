@@ -92,7 +92,7 @@ const Hero = () => {
             href="#"
             className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300 inline-flex items-center gap-2 w-48 justify-center"
           >
-            <a href="/MyResume.pdf" target="_blank" className="text-white">
+            <a href="/ResumePriyansh.pdf" target="_blank" className="text-white">
               <span>Download Resume</span>
             </a>
             <ArrowRight size={16} />
