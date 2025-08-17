@@ -22,7 +22,7 @@ const Projects = () => {
       image: "/kid.png",
       category: "Web",
       technologies: ["React", "NextJS", "NeonDB", "Clerk", "Replicate AI","Gemini AI"],
-      demo: "https://kiddie-gpt.vercel.app/",
+      demo: "https://kiddiegpt.vercel.app/",
       github: "https://github.com/priyansh-narang2308/KiddieGPT-AI-Kids-Story-Gnenerator",
     },
     {
