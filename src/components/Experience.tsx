@@ -28,7 +28,7 @@ const Experience = () => {
       logo: "🏢",
       certificate: {  
         name: "Full Stack Development",
-        issuer: "Skillbut Technologies",
+        issuer: "Skillbit Technologies",
         date: "June 2025",
         verificationLink: "/skillbit.pdf" 
       }
@@ -41,7 +41,12 @@ const Experience = () => {
         "Leading development of enterprise web applications. Architecting solutions, mentoring junior developers, and implementing best practices.",
       technologies: ["MongoDB", "Stock Market", "Flask"],
       logo: "🏢",
-      
+      certificate: {  
+        name: "SDE Intern",
+        issuer: "BlueStock Fintech",
+        date: "August 2025",
+        verificationLink: "/BFSD81150.jpg" 
+      }
     },
   ];
 
