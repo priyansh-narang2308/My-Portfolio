@@ -94,9 +94,18 @@ const Projects = () => {
       description: "A proper dating web app similar to tinder where users can swipe right and swipe left and on matching a chat window appears where the matches can have chat",
       image: "/smash.png",
       category: "Web",
-      technologies: ["React", "NodeJS", "Socket.io", "MongoDB", "ExpressJS"],
+      technologies: ["NextJS", "Supabase", "Replicate", "Flux", "AI","FullStack","Database"],
       demo: "https://smashmemaybe-dating-mern-app.onrender.com/auth",
       github: "https://github.com/priyansh-narang2308/SmashMeMaybe---Dating-MERN-App",
+    },
+    {
+      title: "MindForge",
+      description: "An AI-Powered image generator using replicate as well as a model trainer where you can train your own models and showcase to the world, built using Replicates paid API",
+      image: "/mind.png",
+      category: "Web",
+      technologies: ["React", "NodeJS", "Socket.io", "MongoDB", "ExpressJS"],
+      demo: "https://mindforgee.vercel.app/",
+      github: "https://github.com/priyansh-narang2308/MindForge",
     },
   ];
 
